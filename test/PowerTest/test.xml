@@ -1,0 +1,3 @@
+<object type="Power">
+   <attribute name="amount" type="ULInt">12</attribute>
+</object>

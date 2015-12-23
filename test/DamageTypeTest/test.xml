@@ -1,0 +1,3 @@
+<object type="DamageType">
+   <attribute name="kinetic" type="float">0.8</attribute>
+</object>

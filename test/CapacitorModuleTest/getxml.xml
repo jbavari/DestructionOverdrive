@@ -1,0 +1,64 @@
+<object type="CapacitorModule">
+   <parents>
+      <object type="Module">
+         <parents>
+            <object type="PowerSuppliable">
+               <attribute name="powerSupplied" type="Power">
+                  <object type="Power">
+                     <attribute name="amount" type="ULInt">1</attribute>
+                  </object>
+               </attribute>
+            </object>
+         </parents>
+         <attribute name="upkeep" type="Power">
+            <object type="Power">
+               <attribute name="amount" type="ULInt">1</attribute>
+            </object>
+         </attribute>
+         <attribute name="suggestedUpkeep" type="Power">
+            <object type="Power">
+               <attribute name="amount" type="ULInt">2</attribute>
+            </object>
+         </attribute>
+         <attribute name="maxUpkeep" type="Power">
+            <object type="Power">
+               <attribute name="amount" type="ULInt">5</attribute>
+            </object>
+         </attribute>
+         <attribute name="name" type="CStr">FirstCModule</attribute>
+      </object>
+   </parents>
+   <attribute name="capacitor" type="Capacitor">
+      <object type="Capacitor">
+         <parents>
+            <object type="PowerSuppliable">
+               <attribute name="powerSupplied" type="Power">
+                  <object type="Power">
+                     <attribute name="amount" type="ULInt">1</attribute>
+                  </object>
+               </attribute>
+            </object>
+         </parents>
+         <attribute name="maxCharge" type="Power">
+            <object type="Power">
+               <attribute name="amount" type="ULInt">5</attribute>
+            </object>
+         </attribute>
+         <attribute name="curCharge" type="Power">
+            <object type="Power">
+               <attribute name="amount" type="ULInt">10</attribute>
+            </object>
+         </attribute>
+         <attribute name="upkeep" type="Power">
+            <object type="Power">
+               <attribute name="amount" type="ULInt">5</attribute>
+            </object>
+         </attribute>
+         <attribute name="bleedOff" type="Power">
+            <object type="Power">
+               <attribute name="amount" type="ULInt">1</attribute>
+            </object>
+         </attribute>
+      </object>
+   </attribute>
+</object>

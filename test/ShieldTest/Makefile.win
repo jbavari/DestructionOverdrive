@@ -1,0 +1,30 @@
+# Project: ShieldTest
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = main.o $(RES)
+LINKOBJ  = main.o $(RES)
+LIBS =  -L"lib" -L"C:/lib" -L"../../lib" -Wall -Werror -ggdb3 C:/lib/libxml2.lib C:/lib/libxml2_a.lib ../../lib/doverdrive.a  
+INCS =  -I"include" 
+CXXINCS =  -I"C:/include"  -I"lib/gcc/mingw32/3.4.2/include"  -I"include/c++/3.4.2/backward"  -I"include/c++/3.4.2/mingw32"  -I"include/c++/3.4.2"  -I"include"  -I"C:/include"  -I"../../include" 
+BIN  = ShieldTest.exe
+CXXFLAGS = $(CXXINCS)   -Wall -Werror -ggdb3
+CFLAGS = $(INCS)   -Wall -Werror -ggdb3
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before ShieldTest.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "ShieldTest.exe" $(LIBS)
+
+main.o: main.cpp ../../include/Shield.h ../../include/CapacitorModule.h   ../../include/Power.h ../../include/XmlSerialization.h   C:/include/libxml/parser.h C:/include/libxml/xmlversion.h   C:/include/libxml/xmlexports.h C:/include/libxml/tree.h   C:/include/libxml/xmlstring.h C:/include/libxml/xmlregexp.h   C:/include/libxml/dict.h C:/include/libxml/hash.h   C:/include/libxml/valid.h C:/include/libxml/xmlerror.h   C:/include/libxml/list.h C:/include/libxml/xmlautomata.h   C:/include/libxml/entities.h C:/include/libxml/encoding.h   C:/include/iconv.h C:/include/libxml/xmlIO.h   C:/include/libxml/globals.h C:/include/libxml/SAX.h   C:/include/libxml/xlink.h C:/include/libxml/SAX2.h   C:/include/libxml/xmlmemory.h C:/include/libxml/threads.h   ../../include/XmlSerializationException.h ../../include/LDException.h   ../../include/Capacitor.h ../../include/PowerSuppliable.h   ../../include/InsufficientPowerException.h ../../include/Module.h   ../../include/DamageType.h ../../include/OutOfDomainException.h   ../../include/DamageType.h
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)

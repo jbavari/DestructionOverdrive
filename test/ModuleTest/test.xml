@@ -1,0 +1,18 @@
+<object type="Module">
+   <attribute name="upkeep" type="Power">
+      <object type="Power">
+         <attribute name="amount" type="ULInt">5</attribute>
+      </object>
+   </attribute>
+   <attribute name="suggestedUpkeep" type="Power">
+      <object type="Power">
+         <attribute name="amount" type="ULInt">1</attribute>
+      </object>
+   </attribute>
+   <attribute name="maxUpkeep" type="Power">
+      <object type="Power">
+         <attribute name="amount" type="ULInt">100</attribute>
+      </object>
+   </attribute>
+   <attribute name="name" type="CStr">SuperModule</attribute>
+</object>

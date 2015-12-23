@@ -1,0 +1,30 @@
+<object type="PassiveModule">
+   <parents>
+      <object type="Module">
+         <parents>
+            <object type="PowerSuppliable">
+               <object type="Power">
+                  <attribute name="amount" type="ULInt">2</attribute>
+               </object>
+            </object>
+         </parents>
+         <attribute type="Power" name="upkeep">
+            <object type="Power">
+               <attribute name="amount" type="ULInt">5</attribute>
+            </object>
+          </attribute>
+          <attribute type="Power" name="suggestedUpkeep">
+             <object type="Power">
+                <attribute name="amount" type="ULInt">1</attribute>
+             </object>
+          </attribute>
+          <attribute type="Power" name="maxUpkeep">
+             <object type="Power">
+                <attribute name="Amount" type="ULInt">10</attribute>
+             </object>
+          </attribute>
+      </object>
+   </parents>
+   <attribute type="bool" name="active">false</attribute>
+</object>
+   

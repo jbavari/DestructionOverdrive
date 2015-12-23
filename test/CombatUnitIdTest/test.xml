@@ -1,0 +1,4 @@
+<object type="CombatUnitId">
+   <attribute name="playerId" type="ULInt">12</attribute>
+   <attribute name="objId" type="ULInt">16</attribute>
+</object>

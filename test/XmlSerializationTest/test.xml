@@ -1,0 +1,22 @@
+<object type="TestClass">
+   <parents>
+      <object type="ParentClassA">
+         <attribute name="someString" type="CStr">ReadIn1</attribute>
+      </object>
+      <object type="ParentClassB">
+         <attribute name="someString" type="CStr">ReadIn2</attribute>
+         <attribute name="testAgregation" type="ParentClassA">
+            <object type="ParentClassA">
+               <attribute name="someString" type="CStr">ReadIn3</attribute>
+            </object>
+         </attribute>
+      </object>
+   </parents>
+   <attribute name="a" type="int">20</attribute>
+   <attribute name="b" type="int">20</attribute>
+   <attribute name="c" type="ULInt">20</attribute>
+   <attribute name="d" type="float">20.5</attribute>
+   <attribute name="e" type="bool">false</attribute>
+   <attribute name="f" type="CStr">ReadIn4</attribute>
+</object>
+

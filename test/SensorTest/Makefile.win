@@ -1,0 +1,30 @@
+# Project: Project1
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe -D__DEBUG__
+CC   = gcc.exe -D__DEBUG__
+WINDRES = windres.exe
+RES  = 
+OBJ  = main.o $(RES)
+LINKOBJ  = main.o $(RES)
+LIBS =  -L"C:/School/SDD/Dev-Cpp/lib" -L"C:/School/SDD/LIbXML/iconv-1.9.2.win32/lib" -L"C:/School/SDD/LIbXML/libxml2-2.6.27.win32/lib" -L"C:/School/SDD/sourceForge/lib" -L"C:/School/SDD/LIbXML/libxml2-2.6.27.win32/lib" -L"C:/School/SDD/LIbXML/iconv-1.9.2.win32/lib" -L"C:/School/SDD/sourceForge/lib" ../../lib/zlib.lib ../../lib/doverdrive.a ../../../LIbXML/libxml2-2.6.27.win32/lib/libxml2.lib ../../../LIbXML/libxml2-2.6.27.win32/lib/libxml2_a.lib ../../../LIbXML/iconv-1.9.2.win32/lib/iconv.lib ../../../LIbXML/iconv-1.9.2.win32/lib/iconv_a.lib  -g3 
+INCS =  -I"C:/School/SDD/Dev-Cpp/include"  -I"C:/School/SDD/LIbXML/libxml2-2.6.27.win32/include"  -I"C:/School/SDD/LIbXML/iconv-1.9.2.win32/include"  -I"C:/School/SDD/LIbXML/libxml2-2.6.27.win32/include"  -I"C:/School/SDD/LIbXML/iconv-1.9.2.win32/include"  -I"C:/School/SDD/sourceForge/include" 
+CXXINCS =  -I"C:/School/SDD/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/School/SDD/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/School/SDD/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/School/SDD/Dev-Cpp/include/c++/3.4.2"  -I"C:/School/SDD/Dev-Cpp/include"  -I"C:/School/SDD/LIbXML/libxml2-2.6.27.win32/include"  -I"C:/School/SDD/LIbXML/iconv-1.9.2.win32/include"  -I"C:/School/SDD/sourceForge/include"  -I"C:/School/SDD/LIbXML/libxml2-2.6.27.win32/include"  -I"C:/School/SDD/LIbXML/iconv-1.9.2.win32/include"  -I"C:/School/SDD/sourceForge/include" 
+BIN  = Sensor_Project.exe
+CXXFLAGS = $(CXXINCS)   -g3
+CFLAGS = $(INCS)   -g3
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Sensor_Project.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Sensor_Project.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
